@@ -1,0 +1,23 @@
+{
+  "name": "lab_2",
+  "version": "1.0.0",
+  "description": "Webpack project for lab assignment",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "dev-start": "webpack serve --open"
+  },
+  "keywords": [],
+  "author": "Your Name",
+  "license": "ISC",
+  "devDependencies": {
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^6.4.1",
+    "css-loader": "^7.1.2",
+    "html-webpack-plugin": "^5.6.0",
+    "mini-css-extract-plugin": "^2.9.1",
+    "webpack": "^5.94.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.0.0"
+  }
+}

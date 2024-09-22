@@ -1,0 +1,156 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/* Стили для хедера */
+header {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+header nav h6 {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    margin-top: 0px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Основной контент */
+main {
+    padding: 15px 0px;
+}
+
+.container {
+    padding: 0px 15px 50px 15px;
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+.my-bio {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.my-bio h1 {
+    text-align: center;
+}
+
+.my-bio__main {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.my-bio__main img {
+    max-width: 200px;
+    border-radius: 15px;
+}
+
+/* Rozklad */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid #333;
+    padding: 10px;
+    text-align: center;
+}
+th {
+    background-color: #f2f2f2;
+}
+td {
+    min-width: 150px;
+}
+.teachers {
+    margin-top: 20px;
+}
+.teachers ul {
+    list-style-type: square;
+}
+
+/* Photos */
+.photo-gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .photo-item {
+    max-width: 966px;
+    margin: 10px 0;
+  }
+  
+  .photo-item img {
+    max-width: 100%;
+    max-height: 540px;
+    height: auto;
+  }
+
+/* News */
+.news-item {
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .news-item img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .news-date {
+    font-style: italic;
+    color: #555;
+  }
+
+/* Footer */
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer a {
+    color: chocolate;
+}
