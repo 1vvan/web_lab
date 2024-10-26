@@ -1,0 +1,99 @@
+body {
+    background: linear-gradient(320deg, #009999 20%, #1D7373 40%, #006363 60%, #33CCCC 80%, #5CCCCC 100%);
+}
+  
+main {
+    padding: 15px 0;
+}
+  
+.container {
+    padding: 0 15px 50px;
+    max-width: 70%;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.my-bio {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    h1 {
+        text-align: center;
+    }
+
+    &__main {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        justify-content: space-between;
+
+        img {
+        max-width: 200px;
+        border-radius: 15px;
+        }
+    }
+}
+
+/* Rozklad */
+table {
+    width: 100%;
+    border-collapse: collapse;
+
+    th, td {
+        border: 1px solid #333;
+        padding: 10px;
+        text-align: center;
+    }
+
+    td {
+        min-width: 150px;
+    }
+}
+
+.teachers {
+    margin-top: 20px;
+
+    ul {
+        list-style-type: square;
+    }
+}
+
+/* Photos */
+.photo-gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    .photo-item {
+        max-width: 966px;
+        margin: 10px 0;
+
+        img {
+        max-width: 100%;
+        max-height: 540px;
+        height: auto;
+        }
+    }
+}
+
+/* News */
+.news-item {
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .news-date {
+        font-style: italic;
+        color: #555;
+    }
+}
