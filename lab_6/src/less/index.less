@@ -1,0 +1,176 @@
+// Змінні
+@color-background: linear-gradient(320deg, #009999 20%, #1D7373 40%, #006363 60%, #33CCCC 80%, #5CCCCC 100%);
+@color-header-footer: #333;
+@color-text: white;
+@color-link: chocolate;
+@spacing-small: 10px;
+@spacing-medium: 15px;
+@spacing-large: 25px;
+@spacing-xlarge: 30px;
+
+// Міксини
+.center {
+  text-align: center;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+// Normalize styles
+@import './normalize.css';
+
+header {
+  background-color: @color-header-footer;
+  padding: @spacing-small 0;
+
+  nav {
+    h6 {
+      .center;
+      color: @color-text;
+      font-size: 20px;
+      font-weight: 600;
+      margin: 0 0 @spacing-large;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+
+      li {
+        margin: 0 @spacing-medium;
+
+        a {
+          color: @color-text;
+          text-decoration: none;
+          font-size: 18px;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+
+footer {
+  background-color: @color-header-footer;
+  color: @color-text;
+  .center;
+  padding: @spacing-small 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+
+  a {
+    color: @color-link;
+  }
+}
+
+body {
+  background: @color-background;
+}
+
+main {
+  padding: @spacing-medium 0;
+}
+
+.container {
+  padding: 0 15px 50px;
+  max-width: 70%;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.my-bio {
+  .flex-column;
+  gap: @spacing-medium;
+
+  h1 {
+    .center;
+  }
+
+  &__main {
+    .flex-center;
+    gap: @spacing-xlarge;
+    justify-content: space-between;
+
+    img {
+      max-width: 200px;
+      border-radius: 15px;
+    }
+  }
+}
+
+// Rozklad
+table {
+  width: 100%;
+  border-collapse: collapse;
+
+  th,
+  td {
+    border: 1px solid @color-header-footer;
+    padding: @spacing-small;
+    text-align: center;
+  }
+
+  td {
+    min-width: 150px;
+  }
+}
+
+.teachers {
+  margin-top: @spacing-medium;
+
+  ul {
+    list-style-type: square;
+  }
+}
+
+// Photos
+.photo-gallery {
+  .flex-column;
+  align-items: flex-start;
+
+  .photo-item {
+    max-width: 966px;
+    margin: 10px 0;
+
+    img {
+      max-width: 100%;
+      max-height: 540px;
+      height: auto;
+    }
+  }
+}
+
+// News
+.news-item {
+  margin: 20px 0;
+  border: 1px solid #ccc;
+  padding: @spacing-medium;
+  border-radius: 5px;
+  .flex-column;
+  align-items: center;
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .news-date {
+    font-style: italic;
+    color: #555;
+  }
+}
